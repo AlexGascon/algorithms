@@ -22,6 +22,7 @@ def test_push_increases_the_stack_size():
 # POP
 def test_pop_returns_the_latest_element_pushed():
     stack = Stack()
+    stack.push("First")
     stack.push(42)
 
     assert stack.pop() == 42
@@ -86,3 +87,13 @@ def test_size_on_empty_stack_returns_zero():
     stack = Stack()
 
     assert stack.size == 0
+
+
+# __REPR__
+def test_str_prints_the_stack_and_its_elements():
+    stack = Stack()
+    stack.push(42)
+    stack.push("Second element")
+    stack.push(True)
+
+    assert str(stack) == "Stack(True, 'Second element', 42)"
