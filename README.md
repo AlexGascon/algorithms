@@ -7,7 +7,7 @@ The solutions will be available in different programming languages, in order to 
 In order to simplify the resolution of the problems, we will also implement different data structures like Stacks, Trees, Linked Lists, etc that may be helpful for most of the problems. Here you can find the interface for the data structures that have been implemented so far:
 
 ### Stack
-In computer science, a stack is an abstract data type that serves as a collection of elements. The order in which elements come off a stack gives rise to its alternative name, LIFO (last in, first out). The name "stack" for this type of structure comes from the analogy to a set of physical items stacked on top of each other, which makes it easy to take an item off the top of the stack, while getting to an item deeper in the stack may require taking off multiple other items first
+A stack is an abstract data type that serves as a collection of elements. The order in which elements come off a stack gives rise to its alternative name, LIFO (last in, first out). The name "stack" for this type of structure comes from the analogy to a set of physical items stacked on top of each other, which makes it easy to take an item off the top of the stack, while getting to an item deeper in the stack may require taking off multiple other items first
 
 The implemented operations are:
 
@@ -21,3 +21,12 @@ The implemented operations are:
 * [Python](python/src/data_structures/stack.py)
 * [Elixir](elixir/lib/data_structures/stack.ex)
 
+### Node
+A node is a generic data structure formed by an element and a pointer to another Node. It's main goal is to be used to represent the values in a Linked List
+
+The implemented operations are:
+* `value -> value`: Returns the value of the element contained in the node
+* `next_node -> Node || null`: A pointer to the node that follows this one in the linked list. If the node is the last one, returns `null`.
+
+**Current implementations**:
+* [Python](python/src/data_structures/node.py)
