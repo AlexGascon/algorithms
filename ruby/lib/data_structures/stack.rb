@@ -25,7 +25,7 @@ class Stack
   end
 
   def empty?
-    elements.size == 0
+    size == 0
   end
 
   private
