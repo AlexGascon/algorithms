@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../src/stack'
+require_relative '../../lib/data_structures/stack'
 
 RSpec.describe Stack do
   subject(:stack) { Stack.new }

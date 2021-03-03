@@ -20,6 +20,7 @@ The implemented operations are:
 **Current implementations**:
 * [Python](python/src/data_structures/stack.py)
 * [Elixir](elixir/lib/data_structures/stack.ex)
+* [Ruby](ruby/lib/data_structures/stack.rb)
 
 ### Node
 A node is a generic data structure formed by an element and a pointer to another Node. It's main goal is to be used to represent the values in a Linked List
