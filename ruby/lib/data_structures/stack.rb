@@ -28,6 +28,10 @@ class Stack
     size == 0
   end
 
+  def to_s
+    "Stack(#{elements.join(', ')})"
+  end
+
   private
 
   attr_accessor :elements
