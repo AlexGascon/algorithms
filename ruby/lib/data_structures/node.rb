@@ -7,4 +7,14 @@ class Node
     @value = value
     @next_node = next_node
   end
+
+  def ==(other)
+    return false if other.nil?
+
+    (value == other&.value) && (next_node == other.next_node)
+  end
+
+  def to_s
+    "Node(#{value}, #{next_node})"
+  end
 end

@@ -22,6 +22,15 @@ The implemented operations are:
 * [Elixir](elixir/lib/data_structures/stack.ex)
 * [Ruby](ruby/lib/data_structures/stack.rb)
 
+### Queue
+A queue is a collection of entities that are maintained in a sequence and can be modified by the addition of entities at one end of the sequence and the removal of entities from the other end of the sequence. The operations of a queue make it a first-in-first-out (FIFO) data structure. In a FIFO data structure, the first element added to the queue will be the first one to be removed
+
+The implemented operations are:
+
+* `enqueue(value) -> null`: Adds an element at the start of the queue
+* `dequeue() -> value`: Removes an element from the end of the queue and returns it
+* `peek() -> value`: Returns the item at the end of the queue without removing it.
+* `is_empty() -> boolean`: Indicates if the Queue is empty or not. _Note: In Ruby and Elixir this method is called `empty?`_
 ### Node
 A node is a generic data structure formed by an element and a pointer to another Node. It's main goal is to be used to represent the values in a Linked List
 
